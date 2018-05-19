@@ -1,4 +1,8 @@
-# electron-react-boilerplate
+# Radiodiodi Producer Client
+
+React + Electron front-end for an MPD backend.
+
+Based off the [Electron Boilterplate project](https://github.com/chentsulin/electron-react-boilerplate) (MIT).
 
 ### A Boilerplate for Scalable Cross-Platform Desktop Apps
 
