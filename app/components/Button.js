@@ -5,6 +5,9 @@ const Button = styled.a`
   text-decoration: none;
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &:hover {
     cursor: pointer;
