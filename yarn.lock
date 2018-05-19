@@ -6519,6 +6519,10 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
+mpdclient.js@^0.0.21:
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/mpdclient.js/-/mpdclient.js-0.0.21.tgz#41dfa1cc727f2892cd604c03ab7995abeb0c815d"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"

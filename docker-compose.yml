@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  mpd:
+    image: vitiman/alpine-mpd:latest
+    ports:
+      - "6600:6600"
+    volumes:
+      - mpd_music:/var/lib/mpd/music
+      - mpd_playlists:/var/lib/mpd/playlists
+      - mpd_database:/var/lib/mpd/database
+
+volumes:
+  mpd_music:
+  mpd_playlists:
+  mpd_database:
+

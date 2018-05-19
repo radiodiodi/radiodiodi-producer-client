@@ -10,6 +10,8 @@ import SkipPrevious from 'react-icons/lib/md/skip-previous';
 import { Row } from './Grid';
 import Button from './Button';
 
+import { getStatus as getMPDStatus, getStatus } from '../mpd/MPD';
+
 const Bar = styled.div`
   padding: 1rem;
   flex: 1;
@@ -44,6 +46,22 @@ const nowPlaying = 'Darude - Sandstorm (Radio Edit)';
 const nextUp = 'Advertisement';
 
 class PlayerBar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      state: null,
+    };
+    this.getStatus();
+  }
+
+  getStatus = async () => {
+    const resp = await getMPDStatus();
+    const data = resp.response[0];
+    this.setState({
+      state: data.state,
+    });
+  }
+
   render() {
     return (
       <Bar>
@@ -94,7 +112,7 @@ class PlayerBar extends Component {
           </ReactTooltip>
         </Row>
 
-        <Text>Remaining: 03:35</Text>
+        <Text>State: { this.state.state }</Text>
       </Bar>
     );
   }

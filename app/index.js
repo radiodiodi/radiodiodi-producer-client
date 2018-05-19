@@ -7,6 +7,8 @@ import Root from './containers/Root';
 import { configureStore, history } from './store/configureStore';
 import theme from './theme';
 
+import { getStatus as getMPDStatus } from './mpd/MPD';
+
 const store = configureStore();
 
 const mount = () => render(
@@ -23,3 +25,5 @@ mount();
 if (module.hot) {
   module.hot.accept('./containers/Root', mount);
 }
+
+getMPDStatus();
