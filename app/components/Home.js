@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Row, Column, Grid } from './Grid';
 import Playlist from './Playlist';
 import PlayerBar from './PlayerBar';
+import Library from './Library';
 
 type Props = {};
 
@@ -22,7 +23,7 @@ export default class Home extends Component<Props> {
           </Column>
           <Column>
             <h2>Library</h2>
-            <Playlist />
+            <Library />
           </Column>
         </Row>
         <Row noflex>
