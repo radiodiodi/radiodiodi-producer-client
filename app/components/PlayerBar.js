@@ -7,7 +7,7 @@ import Pause from 'react-icons/lib/md/pause';
 import Stop from 'react-icons/lib/md/stop';
 import SkipNext from 'react-icons/lib/md/skip-next';
 import SkipPrevious from 'react-icons/lib/md/skip-previous';
-import { Row, Column } from './Grid';
+import { Row } from './Grid';
 import Button from './Button';
 
 const Bar = styled.div`
