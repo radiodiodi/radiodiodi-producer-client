@@ -17,6 +17,7 @@ const Row = styled.div`
   flex: ${p => (p.noflex ? 'initial' : 1)};
 
   margin: 0.5rem 0.5rem;
+  overflow: scroll;
 `;
 
 const Column = styled.div`

@@ -19,9 +19,11 @@ export default class Home extends Component<Props> {
         </Row>
         <Row>
           <Column>
+            <h2>Playlist</h2>
             <Playlist />
           </Column>
           <Column>
+            <h2>Library</h2>
             <Playlist />
           </Column>
         </Row>

@@ -39,6 +39,7 @@ injectGlobal`
     background-color: ${theme.color.blue};
     color: ${theme.color.white};
     font-family: 'Open Sans', sans-serif;
+    user-select: none;
   }
   h1 {
     font-size: 3rem;
